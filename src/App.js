@@ -22,6 +22,7 @@ function App() {
       cancelToken: new axios.CancelToken(c => cancel = c)
     }).then(res => {
       setLoading(false);
+
       setNextPageUrl(res.data.next);
       setPrevPageUrl(res.data.previous);
       //{name: ..., order: ..., imgUrl:...}
@@ -48,12 +49,14 @@ function App() {
 
 
   // Will add an gif
-  if (loading) return "Loading...";
+  if (loading) {
+
+  };
 
   return (
     <div className="App">
       <header>
-        <Navbar variant="dark" bg="dark" fixed="top">
+        <Navbar variant="dark" bg="dark" sticky="top">
           <Navbar.Brand style={{ "marginLeft": "20px" }}><span>Pokedex</span></Navbar.Brand>
         </Navbar>
         <div fluid="true" className="pokedex-banner">
