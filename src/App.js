@@ -53,7 +53,7 @@ function App() {
   return (
     <div className="App">
       <header>
-        <Navbar variant="dark" bg="dark" sticky="top">
+        <Navbar variant="dark" bg="dark" fixed="top">
           <Navbar.Brand style={{ "marginLeft": "20px" }}><span>Pokedex</span></Navbar.Brand>
         </Navbar>
         <div fluid="true" className="pokedex-banner">
