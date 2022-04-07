@@ -8,7 +8,7 @@
 
 .pokedex-banner {
   padding: 6rem 3rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   background-color: rgb(225, 226, 176);
   border-radius: 0.3rem;
   background: linear-gradient(
@@ -26,14 +26,14 @@
 }
 
 .upper-page-button {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .lower-page-button {
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,4 +41,8 @@
 
 .next-button {
   margin-left: 1rem;
+}
+
+.outer-card {
+  padding: 0.5rem 0.5rem !important;
 }

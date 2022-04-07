@@ -5,7 +5,7 @@ export default function PokemonList({ pokemons }) {
     <Container>
       <Row>
         {pokemons.map((p) => (
-          <Col xs={6} md={4} lg={3} key={p.order}>
+          <Col xs={6} md={4} lg={3} key={p.order} className="outer-card">
             <Card>
               <Card.Img
                 variant="top"
